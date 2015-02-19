@@ -1,9 +1,9 @@
 #!/bin/bash
 sudo apt-get install -y git gcc build-essential linux-headers-`uname -r` rcconf && \
-mkdir /mnt/cdrom && \
+sudo mkdir /mnt/cdrom && \
 sudo mount -o loop /dev/cdrom /mnt/cdrom/ && \
-cd /mnt/cdrom/ && cp VMwareTools-* /tmp && cd /tmp/ && \
-gunzip VMwareTools-* && \
-tar -xvf VMwareTools-* && \
-cd vmware-tools-distrib/ && \
-./vmware-install.pl
+sudo cd /mnt/cdrom/ && cp VMwareTools-* /tmp && cd /tmp/ && \
+sudo gunzip VMwareTools-* && \
+sudo tar -xvf VMwareTools-* && \
+sudo cd vmware-tools-distrib/ && \
+sudo ./vmware-install.pl
